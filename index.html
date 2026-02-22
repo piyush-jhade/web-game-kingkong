@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KING KONG RAMPAGE – City Runner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- UI overlay shown before game starts and after game over -->
+  <div id="ui-overlay" class="overlay visible">
+
+    <div id="start-screen" class="screen">
+      <div class="title-glow">KING KONG</div>
+      <div class="subtitle">RAMPAGE</div>
+      <p class="flavor">The city burns. Run.</p>
+      <button id="start-btn" class="btn">▶ START RUNNING</button>
+      <div class="controls-hint">
+        <span>↑ / W / SPACE</span> Jump &nbsp;|&nbsp; <span>↓ / S</span> Slide
+        <br><br>
+        <span class="boost-hint">⚡ YELLOW</span> = Speed Boost &nbsp;|&nbsp;
+        <span class="slow-hint">❄ BLUE</span> = Slow Down
+      </div>
+    </div>
+
+    <div id="gameover-screen" class="screen hidden">
+      <div class="go-title">SQUASHED.</div>
+      <div class="go-score-label">Distance Survived</div>
+      <div id="final-score" class="go-score">0 m</div>
+      <div id="best-score-display" class="best-score"></div>
+      <button id="restart-btn" class="btn">↺ TRY AGAIN</button>
+    </div>
+
+  </div>
+
+  <!-- HUD shown during gameplay -->
+  <div id="hud" class="hidden">
+    <div id="score-display">🏃 <span id="score-val">0</span> m</div>
+    <div id="speed-display">SPEED <span id="speed-val">1.0</span>x</div>
+    <div id="effect-display"></div>
+  </div>
+
+  <!-- The game canvas -->
+  <canvas id="gameCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
