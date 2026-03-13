@@ -14,4 +14,4 @@ I will going to make some new features for it in future and try to make it more 
 <br>
 -> It is the best one " there are some points features which lets player to increase and decrease its speed according the obtaining the points ".
 <br>
-direct link -> <li>"https://resonant-klepon-ed92a7.netlify.app/"</li>
+direct link -> <li>"https://piyush-jhade.github.io/web-game-kingkong/"</li>
